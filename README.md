@@ -1,6 +1,6 @@
 # README
 
-![example branch parameter](https://github.com/drhuffman12/example_dockerized_RoR_app_challenge/workflows/Tests/badge.svg?branch=master)
+![example_dockerized_RoR_app_challenge](https://github.com/drhuffman12/example_dockerized_RoR_app_challenge/workflows/Tests/badge.svg?branch=master)
 
 [![GitHub release](https://img.shields.io/github/release/drhuffman12/example_dockerized_RoR_app_challenge.svg)](https://github.com/drhuffman12/example_dockerized_RoR_app_challenge/releases)
 
