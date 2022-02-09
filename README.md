@@ -19,7 +19,7 @@ NOTE: Instructions are assuming that you're running this on Linux and have Docke
   * NOTE: After composing up, if you need to re-build the docker image, you'll need to adjust permissions via:
     `bin/tmp_db_permissions` (require sudo; can also be run from w/in the container).
 * In another terminal, run:
-  * `docker-compose run app bash`
+  * `docker-compose run web bash`
   * Then, run your desired command there.
 * In the docker console, reset the database by running:
   * `bundle exec rails db:reset`
