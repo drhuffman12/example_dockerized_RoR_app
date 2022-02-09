@@ -37,6 +37,7 @@ NOTE: Instructions are assuming that you're running this on Linux and have Docke
 
 * To view the web page, browse to: [http://0.0.0.0:3000/](http://0.0.0.0:3000/).
   * For an initial RoR app, this will look like:
+
     ![docs/initial_rails_app_homepage.png](docs/initial_rails_app_homepage.png)
 
 ### App version
