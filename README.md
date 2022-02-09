@@ -6,6 +6,10 @@
 
 ## Development
 
+For Ruby on Rails documentation, see:
+* https://rubyonrails.org/
+* https://guides.rubyonrails.org/
+
 NOTE: Instructions are assuming that you're running this on Linux and have Docker Compose installed.
 
 ### Running locally in the docker container
