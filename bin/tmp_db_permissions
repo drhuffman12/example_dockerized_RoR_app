@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+user_id=$(id -u)
+user_default_group_id=$(id -g)
+sudo chown -R $user_id:$user_default_group_id tmp/db

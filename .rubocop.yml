@@ -1,0 +1,42 @@
+AllCops:
+  Exclude:
+    - db/**/*.rb
+    - vendor/**/*
+      # Work-round for "Bundle exec rubocop failling on Github Actions but runs successfully locally"
+      # i.e.: `Unable to find gem rubocop-discourse; is the gem installed?` in github workflow error output.
+      # In my cases it was due to: "vendor/bundle/ruby/3.1.0/gems/msgpack-1.4.4/.rubocop.yml"
+      # See also:
+      # * https://stackoverflow.com/questions/69415433/bundle-exec-rubocop-failling-on-github-actions-but-runs-successfully-locally
+      # * https://github.com/rubocop/rubocop/issues/7545#issuecomment-561568308
+      
+  TargetRubyVersion: 3.0
+  NewCops: enable
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
+
+# temp settings; should dial down and adjust code:
+Metrics/MethodLength:
+  Max: 35
+Metrics/ClassLength: 
+  Max: 200
+Metrics/AbcSize: 
+  Max: 30
+Lint/UnusedMethodArgument:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Max: 9
+Metrics/PerceivedComplexity:
+  Max: 9
